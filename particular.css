@@ -1,0 +1,250 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  #mainDiv{
+    border: solid red 1px;
+    display: flex;
+    width: 97%;
+    margin:auto
+  }
+  #ProductImages{
+    width:60%;
+    border: solid red 1px;
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px
+  }
+
+  #ProductImages>img{
+    width: 98%;
+    margin: auto;
+  }
+  #ProductImages>img:hover{
+width: 100%;
+margin: -5px -5px -15px -5px;
+transition:500ms;
+cursor:zoom-in;
+  }
+.pwd{
+  margin-left: 20px;
+  font-weight: 5;
+}
+  #Description{
+    border :solid blue 1px;
+    width: 40%;
+    margin: -20px 20px 20px 20px;
+    /* padding:-30px 200px 20px 20px; */
+  }
+  #Description>h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#282c3f
+  }
+  #greyText{
+    margin-top: -15px;
+    color:#80828d;
+    font-size: larger;
+    font-weight:lighter;
+    opacity: 0.7;
+    font-family:Arial, Helvetica, sans-serif;
+    ;
+  }
+  .ratings{
+    border: solid rgb(204, 200, 200) 0.5px;
+    width: 150px;
+    padding: 3px;
+  }
+
+  .ratings:hover{
+    border: solid black 0.5px;
+    cursor: pointer;
+    width: 150px;
+    padding: 3px;
+  }
+  .ratings>i{
+    color: #14958f;
+    font-size: 15px;
+  }
+  hr{
+    color: rgb(204, 200, 200);
+  }
+  .MRP{
+    font-size: larger;
+    display: flex;
+    margin-top: -20px;
+    width:300px;
+    justify-content: space-between;
+  }
+  .MRP>p{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .MRP>p+p{
+    color:#c6c7cc;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 50;
+  }
+  .MRP>p+p+p{
+    color:#ff905a;
+  }
+.inclusive{
+  color:#03a685;
+  margin-top: -16px;
+  font-weight: bold;
+}
+#sizeChart{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+#sizeChart>p{
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#sizeChart>h4{
+  margin-top: 15px;
+  color:#FF3E6C;
+  font-family: sans-serif;
+}
+#sizes{
+  display: grid;
+  width:300px;
+  grid-template-columns: repeat(5,1fr);
+  gap:10px;
+}
+#sizes>div{
+  display: flex;
+  align-items: center;
+  border:solid grey 0.5px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+}
+#sizes>.mediumSize{
+  border:solid #FF3E6C 0.5px;
+  color: #FF3E6C;
+}
+#sizes>div:hover{
+  border:solid #FF3E6C 0.5px;
+  color: #FF3E6C;
+  cursor: pointer;
+}
+.sizeRecommend{
+  background-color: #fff0f4;
+  padding:20px; 
+  width: 430px;
+  height: 55px;
+  font-size:15px;
+  font-family: sans-serif;
+}
+.sizeRecommend>i{
+  color: #d66680;
+}
+#addToBag{
+  display: flex;
+  width: 430px;
+ 
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  
+}
+#toBag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:58%;
+  background-color: #FF3E6C;
+  border-radius: 10PX;
+  height: 50PX;
+  border: solid black 1px;
+}
+#toWishlist{
+  width: 35%;
+  height: 50PX;
+  justify-content: center;
+  display: flex;
+  border-radius: 10PX;
+  align-items: center;
+  text-align: center;
+  border: solid black 1px;
+}
+
+  /* CSS for Image Pop Up starts Here */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    /* width: 500px; */
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    margin-left: 660px;
+    position: fixed;
+    /* padding: 10px 15px; */
+    margin-bottom: -50px;
+    text-align: right;
+    /* display: flex; */
+    /* justify-content: right; */
+    /* align-items: top; */
+    /* border-bottom: 1px solid black; */
+  }
+  .modal-header>button{
+    text-align: right;
+  }
+  /* .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  } */
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+  
+    /* display: flex ; */
+  }
+  .modal-body>img{
+    width:700px;
+    height: 600px;
+  }
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+ 
+/* CSS For Image Popup Ends Here */
+
+
