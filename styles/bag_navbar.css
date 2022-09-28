@@ -1,0 +1,34 @@
+#parent_RR{
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 95%;
+}
+#logo_RR{
+    width: 8%;
+}
+#parent_RR>div{
+    display: flex;
+    align-items: center;
+}
+#parent_RR>div>img{
+    width: 15%;
+    height: 15%;
+}
+#parent_RR>div>div>h4>a{
+    text-decoration: none; 
+    margin-right: 10px;
+    color: grey;
+}
+#parent_RR>div>div>h4>a>span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#parent_RR>div>div>h4{
+    color: grey
+}
+#parent_RR>div>p{
+    margin-left: 10px;
+}
