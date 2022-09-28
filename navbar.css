@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+/* .right > img {
+  height: 4.5%;
+  border: 0.2px solid grey;
+  border-radius: 5px 0px 0px 5px;
+} */
+#new {
+  width: 2%;
+  height: 2%;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  position: sticky;
+  top: 0;
+  background: white;
+  height: 80px;
+  border: 0px solid red;
+}
+
+.left img {
+  width: 60px;
+  height: 60px;
+  margin-left: -100px;
+}
+
+.container {
+  /* max-width: 80vw; */
+  padding: 0 10vw;
+  margin: auto;
+}
+
+nav {
+  font-size: 13px;
+  padding: 9px;
+  width: 100%;
+  border: 0px solid red;
+  margin-top: -10px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 15px;
+  border: 0px solid red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.search {
+  width: 33vw;
+  padding: 12px 15px;
+  border-radius: 5px 5px 5px 5px;
+  border: 0.5px solid grey;
+  background: #f1f0f0;
+  margin-left: 50px;
+}
+.rightbox {
+  display: flex;
+  margin: 15px;
+}
+
+@media (max-width: 1024px) {
+  nav ul li {
+    list-style: none;
+    padding: 0 4px;
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 0 2vw;
+  }
+
+  header {
+    height: 150px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    flex-direction: column;
+  }
+  .rightbox {
+    display: flex;
+    margin: 12px;
+  }
+  .search {
+    width: 70vw;
+  }
+  #new {
+    width: 2%;
+    height: 2%;
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 470px) {
+  nav ul li {
+    list-style: none;
+    padding: 0 4px;
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 0 2vw;
+  }
+
+  header {
+    height: 150px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    flex-direction: column;
+  }
+  .rightbox {
+    display: flex;
+    margin: 12px;
+  }
+  .search {
+    width: 80vw;
+  }
+  #new {
+    width: 2%;
+    height: 2%;
+    margin-top: 5px;
+    margin-left: -15px;
+  }
+}
