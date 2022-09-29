@@ -7,17 +7,6 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
-/* .right > img {
-  height: 4.5%;
-  border: 0.2px solid grey;
-  border-radius: 5px 0px 0px 5px;
-} */
-#new {
-  width: 2%;
-  height: 2%;
-  margin-top: 15px;
-  margin-left: -15px;
-}
 
 header {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
@@ -32,6 +21,7 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -100px;
+  cursor: pointer;
 }
 
 .container {
@@ -54,6 +44,7 @@ nav ul li {
   border: 0px solid red;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .search {
@@ -62,13 +53,107 @@ nav ul li {
   border-radius: 5px 5px 5px 5px;
   border: 0.5px solid grey;
   background: #f1f0f0;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .rightbox {
   display: flex;
   margin: 15px;
 }
 
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.semibold {
+  font-weight: bold;
+}
+
+.mx-2 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.mx-2 img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.rk_menu {
+  border: 0px solid red;
+}
+.rk_menu > ul {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.rk_menu ul a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0 15px;
+  font-weight: bold;
+  display: block;
+  color: black;
+}
+
+.rk_menu ul a:hover {
+  color: black;
+}
+
+.rk_menu ul li {
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.rk_menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  margin-left: -50px;
+}
+
+.rk_menu ul ul li {
+  float: none;
+  width: 200px;
+
+  margin-top: 10px;
+}
+
+.rk_menu ul li:hover > ul {
+  display: block;
+}
+
+.rk_menu ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h4 {
+  color: rgb(255, 0, 162);
+  font-weight: bold;
+  margin-left: 18px;
+  padding-top: 10px;
+}
 @media (max-width: 1024px) {
   nav ul li {
     list-style: none;
@@ -81,7 +166,7 @@ nav ul li {
   }
 
   header {
-    height: 150px;
+    height: 170px;
   }
 
   nav {
@@ -99,12 +184,6 @@ nav ul li {
   .search {
     width: 70vw;
   }
-  #new {
-    width: 2%;
-    height: 2%;
-    margin-top: 15px;
-    margin-left: -15px;
-  }
 }
 
 @media (max-width: 470px) {
@@ -119,7 +198,7 @@ nav ul li {
   }
 
   header {
-    height: 150px;
+    height: 170px;
   }
 
   nav {
@@ -136,11 +215,5 @@ nav ul li {
   }
   .search {
     width: 80vw;
-  }
-  #new {
-    width: 2%;
-    height: 2%;
-    margin-top: 5px;
-    margin-left: -15px;
   }
 }
