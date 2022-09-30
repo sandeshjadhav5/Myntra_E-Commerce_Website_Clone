@@ -7,96 +7,181 @@
     <link rel="stylesheet" href="./styles/bag_navbar.css" />
     <title>Document</title>
   </head>
-  <style>
-    #max_box_RR{
-        width: 70%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-    #max_box_RR>div:first-child{
-        
-    }
-    #box_RR {
-
-    }
-    #box_RR > div {
-      border: 1px solid grey;
-      font-size: 14px;
-      line-height: 25px;
-      border: 1px solid black;
-    }
-
-    #logo_offers_RR {
-      width: 6%;
-    }
-  </style>
   <body>
     <nav></nav>
 
     <div id="max_box_RR">
-        <div id="box_RR">
-            <div><h1>ADDRESS</h1></div>
-            <div>
-              <div>
-                <img
-                  id="logo_offers_RR"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToNMrdN6q_mg0Zyrw_bfU1m2QpfVYEGzCG873R61W52L8Q7yfMvsTr1YalJVlGowrMess&usqp=CAU"
-                  alt=""
-                />
-                <h4>Available Offers</h4>
-              </div>
-              <ul>
-                <li>
-                  10% Instant Discount on ICICI Bank Credit Cards on a min spend of Rs
-                  3,500.TCA
-                </li>
-                <li>
-                  10% Instant Discount on ICICI Bank Debit Cards on a min spend of Rs
-                  3,000.TCA
-                </li>
-                <li>
-                  10% Instant Discount on Axis Bank Credit Cards on a min spend of Rs
-                  3,500.TCA
-                </li>
-                <li>
-                  10% Instant Discount on Axis Bank Debit Cards on a min spend of Rs
-                  3,000.TCA
-                </li>
-                <li>
-                  Flat Rs 200 Cashback on Paytm Wallet and Postpaid transaction on a
-                  min spend of Rs 2,500.TCA
-                </li>
-                <li>
-                  15% Cashback upto Rs 750 on ZestMoney transactions on a min spend of
-                  Rs 3,000.TCA
-                </li>
-                <li>
-                  10% Instant Discount + 5% Unlimited Cashabck on Flipkart Axis Bank
-                  Credit Card on Min spend of Rs 3,500.TCA
-                </li>
-                <li>
-                  Upto Rs 750 Cashback on Mobikwik Wallet Transactions on a min spend
-                  of Rs 2,000 .Use code MBK750 on Mobikwik.TCA
-                </li>
-                <li>
-                  10% Cashback upto Rs 150 on Ola Money Postpaid or wallet transaction
-                  on a min spend of Rs 1000.TCA
-                </li>
-              </ul>
-            </div>
-            <div>
-              <img
-                src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp"
-                alt=""
-              />
-              <p>Yay!<span>No convenience Fee</span>on this order.</p>
-            </div>
+      <div id="box_RR">
+        <div id="Address_RR">
+          <h1>ADDRESS</h1>
+          <button id="address_btn">ADDRESS</button>
         </div>
-        <div></div>
+        <div>
+          <div id="offers_RR_logo">
+            <img
+              id="logo_offers_RR"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToNMrdN6q_mg0Zyrw_bfU1m2QpfVYEGzCG873R61W52L8Q7yfMvsTr1YalJVlGowrMess&usqp=CAU"
+              alt=""
+            />
+            <h4>Available Offers</h4>
+          </div>
+
+          <ul>
+            <li>
+              10% Instant Discount on ICICI Bank Credit Cards on a min spend of
+              Rs 3,500.TCA
+            </li>
+            <button id="show_btn">Show More</button>
+            <span id="showMore">
+              <li>
+                10% Instant Discount on ICICI Bank Debit Cards on a min spend of
+                Rs 3,000.TCA
+              </li>
+              <li>
+                10% Instant Discount on Axis Bank Credit Cards on a min spend of
+                Rs 3,500.TCA
+              </li>
+              <li>
+                10% Instant Discount on Axis Bank Debit Cards on a min spend of
+                Rs 3,000.TCA
+              </li>
+              <li>
+                Flat Rs 200 Cashback on Paytm Wallet and Postpaid transaction on
+                a min spend of Rs 2,500.TCA
+              </li>
+              <li>
+                15% Cashback upto Rs 750 on ZestMoney transactions on a min
+                spend of Rs 3,000.TCA
+              </li>
+              <li>
+                10% Instant Discount + 5% Unlimited Cashabck on Flipkart Axis
+                Bank Credit Card on Min spend of Rs 3,500.TCA
+              </li>
+              <li>
+                Upto Rs 750 Cashback on Mobikwik Wallet Transactions on a min
+                spend of Rs 2,000 .Use code MBK750 on Mobikwik.TCA
+              </li>
+              <li>
+                10% Cashback upto Rs 150 on Ola Money Postpaid or wallet
+                transaction on a min spend of Rs 1000.TCA
+              </li>
+              <button id="hide_btn">Show Less</button>
+            </span>
+          </ul>
+        </div>
+        <div id="left_lower_bag">
+          <img
+            src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp"
+            alt=""
+          />
+          <p>Yay!<span>No convenience Fee </span>on this order.</p>
+        </div>
+        <div id="products_details_RR"></div>
+        <div id="wishlist_RR">
+          <div>
+            <img
+              id="wishlist_icon_RR"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSum2VLTKpLyTVcvSQgP_C8dy7V8Ni7huDh03I7lGaEQaSvmhiQsAUnZ41qc6Hs3KNNyyI&usqp=CAU"
+              alt=""
+            />
+            <p>Add More From Wishlist</p>
+          </div>
+          <p>></p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4>COUPONS</h4>
+          <div id="coupon_RR">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <p>Apply Coupons</p>
+            <button id="Apply_btn">Apply</button>
+          </div>
+          <hr />
+          <h4>PRICE DETAILS (0 item)</h4>
+          <div class="coupons_RR">
+            <p>Total MRP</p>
+            <p>$0000</p>
+          </div>
+          <div class="coupons_RR">
+            <p>Discount on MRP</p>
+            <p>$0000</p>
+          </div>
+          <div class="coupons_RR">
+            <p>Coupon Discount</p>
+            <p>$0000</p>
+          </div>
+          <div class="coupons_RR">
+            <p>Convenience Fee <span>Know More</span></p>
+            <p>$0000 FREE</p>
+          </div>
+          <hr />
+          <div class="coupons_RR">
+            <h4>Total Amount</h4>
+            <h4>$0000</h4>
+          </div>
+          <button id="place_btn">PLACE ORDER</button>
+        </div>
+      </div>
     </div>
-   
+    <hr id="bag_hr" />
+    <div id="footer_img">
+      <div>
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+        alt=""
+      />
+
+      <img
+        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+        alt=""
+      />
+      </div>
+      <h4>Need Help ?/ Contact us ?</h4>
+    </div>
   </body>
 </html>
 <script src="./scripts/bag.js" type="module"></script>
-
