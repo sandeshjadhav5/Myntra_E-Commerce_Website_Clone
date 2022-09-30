@@ -23,11 +23,11 @@ img {
   width: 100%;
 }
 
-#top-store {
+/* #top-store {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 #top-store-img > img {
   width: 100%;
