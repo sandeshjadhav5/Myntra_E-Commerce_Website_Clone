@@ -401,6 +401,108 @@ margin-bottom: -10px;
   margin-top: 15px;
   margin-left: -25px;
 }
+.boldTextS{
+  margin-left: 32px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#similarProducts{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+gap:40px;
+width:95%;
+margin: auto;
+}
+#similarProducts>div>img{
+  width:100%;
+}
+#similarProducts>div{
+  border: solid lightgrey 0.5px;
+}
+#similarProducts>div:hover{
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#similarProducts>div>h4{
+  margin-bottom: -1px;
+  margin-top: 0px;
+  font-family: sans-serif;
+  color: #282c3f;
+  padding:5px
+}
+#similarProducts>div>h5{
+  margin-bottom: -1px;
+  margin-top: -10px;
+  font-family: sans-serif;
+  color: #282c3f;
+  padding:5px
+}
+#similarProducts>div>p{
+  margin-top: -8px;
+  color: grey;
+  font-family: sans-serif;
+  font-size: small;
+  padding:5px
+}
+
+#customersLiked{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+gap:40px;
+width:95%;
+margin: auto;
+}
+#customersLiked>div>img{
+  width:100%;
+}
+#customersLiked>div{
+  border: solid lightgrey 0.5px;
+}
+#customersLiked>div:hover{
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#customersLiked>div>h4{
+  margin-bottom: -1px;
+  margin-top: 0px;
+  font-family: sans-serif;
+  color: #282c3f;
+  padding:5px
+}
+#customersLiked>div>h5{
+  margin-bottom: -1px;
+  margin-top: -10px;
+  font-family: sans-serif;
+  color: #282c3f;
+  padding:5px
+}
+#customersLiked>div>p{
+  margin-top: -8px;
+  color: grey;
+  font-family: sans-serif;
+  font-size: small;
+  padding:5px
+}
+#moreSuggestions{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+#moreSuggestions>.pinkText{
+  border: solid lightgrey 0.5px;
+  padding: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 20px;
+}
+#moreSuggestions>.pinkText:hover{
+  cursor: pointer;
+  border:solid 1px rgb(202, 71, 93);
+}
+
   /* CSS for Image Pop Up starts Here */
   .modal {
     position: fixed;
