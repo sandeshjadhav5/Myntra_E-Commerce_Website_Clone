@@ -12,8 +12,9 @@
       sizes="64x64"
     />
     <link rel="stylesheet" href="navbar.css" />
-    <!-- <style>
-        div{
+
+    <style>
+      #rk_sign, #rk_log {
             display: flex;
             flex-direction: column;
             margin:auto;
@@ -23,7 +24,7 @@
         }
         #rk_sign{
             width:34%;
-            margin-top: 5%;
+            margin-top: 4%;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         #rk_log{
@@ -34,6 +35,7 @@
             background-color: #fff;
             line-height: 25px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 100px;
         }
         #rk_num{
             padding:15px 20px 15px 20px;
@@ -48,7 +50,7 @@
              font-size: 15px;
              cursor:pointer;
         }
-    </style> -->
+    </style>
   </head>
   <body>
     <header class="container">
@@ -75,7 +77,7 @@
     let number = document.getElementById("rk_num").value;
     localStorage.setItem("user_number", number);
 
-    window.location.href = "/otp.html";
+    window.location.href = "./otp.html";
   }
 </script>
 <script type="module" src="installnavbar.js"></script>

@@ -44,18 +44,80 @@
         margin-top: -20px;
       }
     </style> -->
+    <style>
+      #rk_form {
+        /* border: 0px solid red;
+        width: 20%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 70px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        width: 25%;
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        gap: 5px;
+        margin-top: 2%;
+        padding: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .rk_in {
+        /* width: 300px;
+        height: 30px;
+        text-align: center;
+        margin-bottom: 13px; */
+        padding: 15px 20px 15px 20px;
+        margin-top: 2%;
+      }
+      #rk_create {
+        /* width: 310px;
+        padding: 15px 20px 15px 20px;
+        margin-top: 2%;
+        background-color: #ff3f6b;
+        color: white;
+        border: none;
+        cursor: pointer; */
+        padding: 15px 20px 15px 20px;
+        margin-top: 2%;
+        background-color: #ff3f6b;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      body {
+        background-color: #feedf1;
+      }
+      #num{
+        margin-top: -20px;
+        margin-left: -4px;
+      }
+    </style>
   </head>
   <body>
-    <header class="container">
-    </header>
+    <header class="container"></header>
     <div id="rk_form">
       <h3>Complete your Log in</h3>
       <p>Mobile Number</p>
-      <h4 id="num"></h4>
-      <input id="pass" type="password" placeholder="Create password*" />
-      <input type="text" placeholder="Full Name" id="name" />
-      <input type="email" placeholder="Email (Optional)" id="email" />
-      <div>
+      <h4 id="num" style="margin-top: -20px"></h4>
+      <input
+        class="rk_in"
+        id="pass"
+        type="password"
+        placeholder="Create password*"
+      />
+      <input class="rk_in" type="text" placeholder="Full Name" id="name" />
+      <input
+        class="rk_in"
+        type="email"
+        placeholder="Email (Optional)"
+        id="email"
+      />
+      <div style="margin-bottom: 10px;margin-top: 10px;">
         <label for="gender"> Select Gender: </label>
 
         <input type="radio" name="gender" />
@@ -63,8 +125,13 @@
         <input type="radio" />
         Male
       </div>
-      <input type="number" placeholder=" +91  |  Alternate Mobile Number" />
       <input
+        class="rk_in"
+        type="number"
+        placeholder=" +91  |  Alternate Mobile Number"
+      />
+      <input
+        class="rk_in"
         type="text"
         name=""
         id=""
@@ -82,7 +149,7 @@
     let name = document.getElementById("name").value;
     localStorage.setItem("name", name);
 
-    window.location.href = "/profile.html";
+    window.location.href = "./profile.html";
   }
 </script>
 
