@@ -7,25 +7,25 @@
   #mainDiv{
     /* border: solid red 1px; */
     display: flex;
-    width: 97%;
+    width: 100%;
     margin:auto
   }
   #mainDiv>#ProductImages{
     width:60%;
-    height: 1700px;
+    /* height: 1700px; */
     /* border: solid green 1px; */
-    display: grid;
+    /* display: grid; */
     /* background-color: aqua; */
-    grid-template-columns: repeat(2,1fr);
-    gap:10px
+    /* grid-template-columns: repeat(1,1fr); */
+    
   }
 
-  #ProductImages>img{
-    width: 98%;
-    margin: auto;
-    margin-bottom: 10px;
+  #modal{
+    width: 500px;
+    margin-left: 100px;
+ 
   }
-  #ProductImages>img:hover{
+  #modal:hover{
 width: 100%;
 margin: -5px -5px -15px -5px;
 transition:500ms;
@@ -34,11 +34,13 @@ cursor:zoom-in;
 .pwd{
   margin-left: 20px;
   font-weight: 5;
+  font-family: sans-serif;
+  margin-top:50px;
 }
   #Description{
     /* border :solid blue 1px; */
     width: 40%;
-    margin: -20px 15px 25px 25px;
+    /* margin: -20px 15px 25px 25px; */
     /* padding:-30px 200px 20px 20px; */
   }
   #Description>h2{
@@ -502,80 +504,7 @@ margin: auto;
   cursor: pointer;
   border:solid 1px rgb(202, 71, 93);
 }
-
-  /* CSS for Image Pop Up starts Here */
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    z-index: 10;
-    /* background-color: white; */
-    /* width: 500px; */
-    max-width: 80%;
-  }
-  
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
-    margin-left: 660px;
-    position: fixed;
-    /* padding: 10px 15px; */
-    margin-bottom: -50px;
-    text-align: right;
-    /* display: flex; */
-    /* justify-content: right; */
-    /* align-items: top; */
-    /* border-bottom: 1px solid black; */
-  }
-  .modal-header>button{
-    text-align: right;
-  }
-  /* .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  } */
-  
-  .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 2.25rem;
-    font-weight: bold;
-  }
-  
-  .modal-body {
-  
-    /* display: flex ; */
-  }
-  .modal-body>img{
-    width:700px;
-    height: 600px;
-  }
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-
+#ProductImages>#dynamic>img{
+  margin-left: 0px;
+}
  
-/* CSS For Image Popup Ends Here */
-
-
