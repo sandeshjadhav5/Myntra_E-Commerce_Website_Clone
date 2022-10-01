@@ -1,5 +1,22 @@
 
+// let key=JSON.parse(localStorage.getItem('id'))
 
+const getDataDynamic = async () => {
+   
+   
+  try{
+
+    let res= await fetch(`https://script.google.com/macros/s/AKfycbwcxQ0Aw-882QLDwu4zOO1uA-p_ZKuPNNEv3E1K5xqRiuAj2BJispaOyxiEzDfWZAGS/exec?gender=Mens`)
+let data=await res.json()
+let actual_dataDynamic=data.data
+//console.log(actual_dataDynamic)
+appendDataDynamic(actual_dataDynamic)
+  }
+  catch(e){
+    console.log(e)
+  }
+}
+getDataDynamic()
 const appendDataDynamic= (actual_dataDynamic) => {
   
   let key=3077134
@@ -24,9 +41,21 @@ let imgDiv= document.querySelector('#dynamic')
       name.innerText=el.brand
       let price=document.getElementById('priceTag')
       price.innerText=`Rs.${el.price}`
-
+      let pricee=document.getElementById('priceTagg')
+      pricee.innerText=`Rs.${el.price}`
       let pwd=document.getElementById('pwd')
       pwd.innerText=`Home / Clothing / ${el.gender} / ${el.brand} / ${el.name}`
+
+
+
+      document.querySelector('.lSize').addEventListener('click',function(){
+        let price= document.querySelector('#priceTag')
+        price.innerHTML=`Rs.${(el.price)+el.price*0.1}`
+        document.querySelector('.lSize').style.backgroundColor="lightgrey"
+        document.querySelector('.lSize').style.border="solid 1px red"
+        document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
+ 
+      })
 
       div.append(img)
       container.append(div)
@@ -126,14 +155,7 @@ const appendLikedData = (actual_data) => {
      name.innerText=el.name;
      let price=document.createElement('h5')
      price.innerText=`Rs.${el.price}`
-     document.querySelector('.lSize').addEventListener('click',function(){
-       let price= document.querySelector('.priceTag')
-       price.innerHTML=`Rs.${(el.price)-el.price*0.5}`
-       document.querySelector('.lSize').style.backgroundColor="lightgrey"
-       document.querySelector('.lSize').style.border="solid 1px red"
-       document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
-
-     })
+     
      div.append(img,brand,name,price)
      container.append(div)
    })
@@ -141,19 +163,4 @@ const appendLikedData = (actual_data) => {
  }
 
 
- const getDataDynamic = async () => {
-   
-   
-   try{
-
-     let res= await fetch(`https://script.google.com/macros/s/AKfycbwcxQ0Aw-882QLDwu4zOO1uA-p_ZKuPNNEv3E1K5xqRiuAj2BJispaOyxiEzDfWZAGS/exec?gender=Mens`)
-let data=await res.json()
-let actual_dataDynamic=data.data
-//console.log(actual_dataDynamic)
-appendDataDynamic(actual_dataDynamic)
-   }
-   catch(e){
-     console.log(e)
-   }
- }
-getDataDynamic()
+ 
