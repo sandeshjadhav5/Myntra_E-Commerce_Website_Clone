@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SHOPPING BAG</title>
+    <link
+    rel="icon"
+    href="https://constant.myntassets.com/www/icons/favicon.ico"
+  />
+    <link rel="stylesheet" href="../CSS/cart.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_container">
+        <div class="nav_container_child">
+          <img
+            style="width: 50px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
+            alt=""
+          />
+        </div>
+
+        <div class="nav_container_child">
+          <span style="color: #85c099"> <u>BAG</u> </span> ------------------
+          ADDRESS ------------------ PAYMENT
+        </div>
+        <div class="nav_container_child" id="nav_container_child">
+          <div>
+            <img
+              style="width: 30px"
+              src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
+              alt=""
+            />
+          </div>
+
+          <div><p>100 % SECURE</p></div>
+
+          <!--  -->
+          <!-- <span > <p>100 % SECURE</p> </span> -->
+        </div>
+      </div>
+    </nav>
+
+    <div id="container">
+      <div class="container_child" id="cart_left">
+        <div class="cart_left_address">
+          <div class="left_address_child">
+            <p>
+              Deliver to: Amit Kumar ,110001 <br />
+              4O/C-I New Colony, karol East Punjabi Delhi
+            </p>
+          </div>
+          <div class="left_address_child">
+            <button style="border: 1px solid red; background-color: white">
+              <h5 style="color: RED; padding: 10px; cursor: pointer">
+                CHANGE ADDRESS
+              </h5>
+            </button>
+          </div>
+        </div>
+
+        <div class="cart_left_offer">
+          <div class="cart_left_offer_child">
+            <span
+              style="font-size: 20px; font-weight: bold; padding-left: 20px"
+            >
+              Available Offers</span
+            >
+
+            <li>
+              <span
+                >10% Instant Discount on ICICI Bank Credit Cards on a min spend
+                of Rs 3,500.TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >10% Instant Discount on ICICI Bank Debit Cards on a min spend
+                of Rs 3,000.TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >10% Instant Discount on Axis Bank Credit Cards on a min spend
+                of Rs 3,500.TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >10% Instant Discount on Axis Bank Debit Cards on a min spend of
+                Rs 3,000.TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >Flat Rs 200 Cashback on Paytm Wallet and Postpaid transaction
+                on a min spend of Rs 2,500. TCA</span
+              >
+            </li>
+            <li>
+              <span>
+                15% Cashback upto Rs 750 On ZestMoney Transactions on a min
+                spend of Rs 3,000. TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >10% Instant Discount + 5% Cashback on Flipkart Axis Bank Credit
+                Card on Min spend of Rs 3,500. TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >Upto Rs 750 on Mobikwik Wallet on a min spend of Rs 2,000.Use
+                code MBK750 on Mobikwik.TCA</span
+              >
+            </li>
+            <li>
+              <span
+                >10% Cashback upto Rs 150 on Ola Money Postpaid or wallet
+                transaction on a min spend of Rs 1000 . TCA</span
+              >
+            </li>
+          </div>
+        </div>
+
+        <div class="cart_left_no_fee">
+          <div class="cart_left_no_fee_child">
+            <img
+              src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="cart_left_no_fee_child">
+            <p>
+              Yai!
+              <span style="font-weight: bolder">No convenience fee </span>on
+              this order.
+            </p>
+          </div>
+        </div>
+
+        <div class="cart_left_price_drop">
+          <div class="cart_left_price_drop_child">
+            <img
+              src="https://constant.myntassets.com/checkout/assets/img/price-drop.png"
+              alt=""
+            />
+          </div>
+
+          <div class="cart_left_price_drop_child">
+            <span style="font-weight: bolder">Prices Have Dropped </span> <br />
+            The price of one or more items in your bag has dropped. Buy them
+            now!
+          </div>
+        </div>
+
+        <div class="cart_left_item_selected">
+          <div class="cart_left_item_selected_child">
+            <h4>ITEMS IN CART</h4>
+          </div>
+          <div
+            class="cart_left_item_selected_child"
+            id="cart_left_item_selected_child_2"
+          >
+            <div>
+              <button style="border: 0px; background-color: white">
+                <p style="cursor: pointer">REMOVE</p>
+              </button>
+            </div>
+
+            <div>
+              <button style="border: 0px; background-color: white">
+                <p style="cursor: pointer">MOVE TO WISHLIST</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart_items" id="cart_items">
+          <div id="cart_items_child" class="cart_items_child"></div>
+          <div id="cart_items_child" class="cart_items_child"></div>
+        </div>
+
+        <div class="cart_wishlist">
+          <div class="cart_wishlist_child">
+            <svg
+              class="cart_wishlist_child_img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="20"
+              viewBox="0 0 12 16"
+            >
+              <path
+                fill="#000"
+                fill-rule="evenodd"
+                d="M10.993 14.62a.067.067 0 0 1-.103.058l-4.571-2.77a.638.638 0 0 0-.64 0l-4.57 2.77a.067.067 0 0 1-.102-.058V1.133A.13.13 0 0 1 1.139 1H3.5V3.5c0 .298.18.543.486.543s.515-.245.515-.543V1h6.36a.13.13 0 0 1 .133.133V14.62zM11.307 0H.693A.687.687 0 0 0 0 .68v14.719A.61.61 0 0 0 .617 16a.63.63 0 0 0 .315-.086l4.996-3.026a.14.14 0 0 1 .144 0l4.996 3.026a.628.628 0 0 0 .315.086.61.61 0 0 0 .617-.602V.679C12 .306 11.69 0 11.307 0z"
+              ></path>
+            </svg>
+          </div>
+          <div class="cart_wishlist_child">
+            <p style="font-weight: bolder">Add More From Wishlist</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container_child" id="cart_right">
+        <div class="care_right_cupon">
+          <div class="care_right_cupon_child_1"><h5>COUPONS</h5></div>
+
+          <div class="care_right_cupon_child_2">
+            <input
+              type="text"
+              placeholder="Enter Cupon Code"
+              id=""
+              class="cupon_apply_input"
+            />
+            <button class="cupon_apply_btn">Apply</button>
+          </div>
+        </div>
+
+        <div style="margin-top: 10px; padding: 10px">
+          GIFTING &amp; PERSONALISATION
+        </div>
+
+        <div class="cart_right_gift">
+          <div class="cart_right_gift_child_2">
+            <div>
+              <img
+                src="https://constant.myntassets.com/checkout/assets/img/gift-big.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>
+                Buying for a loved one? <br />
+                Gift wrap and personalised message on card, <br />
+                Only for ₹ 25
+              </p>
+              <h5
+                style="
+                  padding: 10px;
+                  margin-top: -10px;
+                  color: red;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                ADD GIFT WRAP
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart_right_price">
+          <p>PRICE DETAILS</p>
+          <hr />
+          <div class="cart_right_price_child">
+            <div>Total MRP</div>
+            <div>4198</div>
+          </div>
+
+          <div class="cart_right_price_child">
+            <div>Discount on MRP</div>
+            <div>4198</div>
+          </div>
+
+          <div class="cart_right_price_child">
+            <div>Coupon Discount</div>
+            <div>4198</div>
+          </div>
+
+          <div class="cart_right_price_child">
+            <div>Convenience Fee</div>
+            <div><del>₹99</del> FREE</div>
+          </div>
+
+          <div style="margin-top: 10px"><hr /></div>
+
+          <div class="cart_tatal_box">
+            <div class="cart_tatal">Total Amount</div>
+            <div class="cart_tatal_amount">2697</div>
+          </div>
+
+          <div class="cart_place_order">
+            <div><button class="cart_place_order_btn">PLACE ORDER</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer id="footer">
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src=" https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png "
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src=" https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+          alt=""
+        />
+      </div>
+      <div class="footer_img">
+        <img
+          src=" https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+          alt=""
+        />
+      </div>
+
+      <div class="footer_text">Need Help ? Contact Us</div>
+    </footer>
+
+
+  </body>
+</html>
+
+<script src="../SCRIPT/cart.js"></script>
