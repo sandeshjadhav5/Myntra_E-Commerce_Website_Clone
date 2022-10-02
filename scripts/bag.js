@@ -14,3 +14,8 @@ hide_btn.addEventListener("click" , function(){
     showMore.style.display = "none";
     show_btn.style.display = "block"   
 })
+
+let place_btn = document.querySelector("#place_btn");
+place_btn.addEventListener("click", function(){
+    window.location.href = "Address.html"
+})

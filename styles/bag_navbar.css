@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 #parent_RR{
     display:flex;
     justify-content:space-between ;
@@ -13,7 +16,7 @@
     display: flex;
     align-items: center;
 }
-#parent_RR>div>img{
+#paretn_RR>div>img{
     width: 20%;
     height: 15%;
 }
@@ -31,119 +34,4 @@
 }
 #parent_RR>div>p{
     margin-left: 10px;
-}
-#max_box_RR{
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 40px;
-}
-#max_box_RR>div:first-child{
-    grid-area: 1/1/2/3;
-}
-ul{
-    margin-left: -10px;
-    margin-top: -15px;
-}
-#box_RR > div {
-  border: 1px solid grey;
-  font-size: 14px;
-  line-height: 25px;
-  border: 1px solid black;
-  margin: 10px;
-}
-#logo_offers_RR {
-  width: 6%;
-  height: 6%;
-}
-#offers_RR_logo{
-    display: flex;
-    align-items: center;
-}
-#left_lower_bag{
-    display: flex;
-    align-items: center;
-}
-#left_lower_bag>img{
-    width: 5%;
-}
-#showMore{
-    display: none;
-}
-#hide_btn , #show_btn{
-    border: 0px;
-    background-color: white;
-    color: rgb(243, 47, 112);
-    font-weight: bolder;
-}
-#coupon_RR{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 5px 0px 10px;
-}
-#coupon_RR>img{
-    width: 7%;
-    height: 7%;
-    margin-right: -120px;
-}
-.coupons_RR{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -20px;
-}
-.coupons_RR>p{
-    font-size: 14px;
-}
-#place_btn{
-    width: 100%;
-    padding: 10px;
-    border: 0px;
-    background-color: rgb(247, 54, 118);
-    color: white;
-    font-weight: bolder
-}
-button{
-    cursor: pointer;
-}
-#address_btn{
-    border: 1px solid rgb(247 , 54 , 118);
-    color: rgb(247 , 54 , 118);
-    background-color: white;
-}
-#Address_RR{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-#wishlist_RR{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px 5px 10px;
-    cursor: pointer;
-}
-#wishlist_RR>div{
-    display: flex;
-    align-items: center;
-}
-#wishlist_icon_RR{
-    width: 15%;
-    height: 80%;
-}
-#bag_hr{
-    width: 70%;
-}
-#footer_img{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 100px 0px 100px;
-}
-#footer_img>div>img{
-    width: 5%;
-}
-#footer_img>h4{
-    margin-left: -1000px;
-    border: 1px solid black;
 }
