@@ -454,6 +454,7 @@ grid-template-columns: repeat(5,1fr);
 gap:40px;
 width:95%;
 margin: auto;
+margin-bottom: 80px;
 }
 #customersLiked>div>img{
 width:100%;
@@ -510,5 +511,7 @@ margin-left: 0px;
 }
 
 span{
-  color: black;
+  color: gray;
+  font-family:Roboto;
+  font-weight: lighter;
 }

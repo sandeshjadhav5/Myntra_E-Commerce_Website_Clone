@@ -47,7 +47,7 @@ let imgDiv= document.querySelector('#dynamic')
       let pricee=document.getElementById('priceTagg')
       pricee.innerText=`Rs.${el.price}`
       let pwd=document.getElementById('pwd')
-      pwd.innerText=`Home / Clothing / ${el.gender} / ${el.brand} / ${el.name}`
+      pwd.innerText=`${el.gender} / ${el.brand} / ${el.name}`
 
 
 

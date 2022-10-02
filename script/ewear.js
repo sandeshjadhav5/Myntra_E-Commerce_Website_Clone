@@ -66,5 +66,5 @@ let result=document.getElementById("result_base")
 }
 const details=(id)=>{
    localStorage.setItem("products",JSON.stringify(id))
-   window.location.href
+   window.location.href="./particular.html"
 }
