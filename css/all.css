@@ -1,37 +1,3 @@
-/* #box{
-    display:-webkit-flex
-}
-#sidebar{
-    border:1px solid red;
-    width:20%;
-    position: fixed;
-}
-
-#result_base div{
-display: block;
-}
-#result_base{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    margin: 0 -10px 0 3px;
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-} */
-
 body{
     font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
 }
@@ -46,6 +12,7 @@ body{
     /* margin-left: -5px; */
     margin: auto;
     border-right: 1px solid #eaeaec;
+    border-bottom: 1px solid #eaeaec;
 }
 #box #result_base{
     width:80%;

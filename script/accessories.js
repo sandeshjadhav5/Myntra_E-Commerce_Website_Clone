@@ -9,7 +9,7 @@ import {top_bar} from "./top_bar.js"
 let top_barDiv=document.getElementById("dpdown")
 top_barDiv.innerHTML=top_bar()
 
-import { footer } from "./footer.js";
+import { footer } from "./footer_product_page.js";
 document.getElementById("footer").innerHTML=footer();
 
 let container=document.getElementById("box")
