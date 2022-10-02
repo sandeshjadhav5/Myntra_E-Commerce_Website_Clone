@@ -126,44 +126,13 @@ function removeElement(index) {
   window.location.reload();
 }
 
+document.getElementById("cart_place_order_btn").addEventListener("click", placeOrder);
 
+ 
 
+function placeOrder() {
+  window.location.href = "./payment.html";
 
-
-function navbar (){
-  return`
-  <nav>
-      <div class="nav_container">
-        <div class="nav_container_child">
-          <img
-            style="width: 50px"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
-            alt=""
-          />
-        </div>
-
-        <div class="nav_container_child">
-          <span style="color: #85c099"> <u>BAG</u> </span> ------------------
-          ADDRESS ------------------ PAYMENT
-        </div>
-        <div class="nav_container_child" id="nav_container_child">
-          <div>
-            <img
-              style="width: 30px"
-              src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
-              alt=""
-            />
-          </div>
-
-          <div><p>100 % SECURE</p></div>
-
-          <!--  -->
-          <!-- <span > <p>100 % SECURE</p> </span> -->
-        </div>
-      </div>
-    </nav>
-  
-  `
 }
 
-export{navbar}
+
