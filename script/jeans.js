@@ -1,3 +1,5 @@
+import navbar from "./NAVBAR.js"
+document.getElementById("navbar").innerHTML=navbar()
 
 import {sidebar} from "./sidebar.js"
 let sidebar_div = document.getElementById("sidebar");
