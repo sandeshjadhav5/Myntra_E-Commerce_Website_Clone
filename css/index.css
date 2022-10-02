@@ -6,6 +6,11 @@ img {
   cursor: pointer;
 }
 
+
+#myntra-main-container{
+  margin-top: 10px;
+}
+
 #myntra-main-container img {
   width: 100%;
 }

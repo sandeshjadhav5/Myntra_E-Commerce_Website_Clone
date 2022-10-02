@@ -10,5 +10,5 @@ pro.addEventListener("click", () => {
 });
 
 function signup() {
-  window.location.href = "signup.html";
+  window.location.href = "../html/signup.html";
 }
