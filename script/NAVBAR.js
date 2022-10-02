@@ -171,6 +171,7 @@ let navbar = () => {
           />Wishlist
         </div>
         <div class="bag mx-2">
+        <a href=./cart.html>
           <img
             src="https://cdn-icons-png.flaticon.com/512/687/687259.png"
             alt=""

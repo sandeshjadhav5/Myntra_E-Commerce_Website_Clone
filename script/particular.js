@@ -39,7 +39,8 @@ let imgDiv= document.querySelector('#dynamic')
     console.log(imgDiv)
       let brand=document.getElementById('greyText')
       brand.innerHTML=el.name
-      
+      let ratings=document.querySelector('.ratings')
+      ratings.innerHTML='<b>4.3 </b> <i class="fa-solid fa-star"></i> | 56.3k Ratings'
       let name=document.getElementById('productNameDynamic')
       name.innerText=el.brand
       let price=document.getElementById('priceTag')
@@ -50,15 +51,64 @@ let imgDiv= document.querySelector('#dynamic')
       pwd.innerText=`${el.gender} / ${el.brand} / ${el.name}`
 
 
+//for medium size
+document.querySelector('.mediumSize').addEventListener('click',function(){
+  let price= document.querySelector('#priceTag')
+  price.innerHTML=`Rs.${el.price}`
+  document.querySelector('.mediumSize').style.backgroundColor="lightgrey"
+  document.querySelector('.mediumSize').style.border="solid 1px red"
+  document.querySelector("#sizes>.lSize").style.border="solid lightgrey 0.5px"
+  document.querySelector("#sizes>.xlSize").style.border="solid lightgrey 0.5px"
+  document.querySelector('.lSize').style.backgroundColor="white"
+  document.querySelector("#sizes>.xxlSize").style.border="solid lightgrey 0.5px"
+  document.querySelector("#sizes>.xxlSize").style.border="solid lightgrey 0.5px"
+  document.querySelector('.xxlSize').style.backgroundColor="white"
+})
 
+//for large size
       document.querySelector('.lSize').addEventListener('click',function(){
         let price= document.querySelector('#priceTag')
-        price.innerHTML=`Rs.${(el.price)+el.price*0.1}`
+        price.innerHTML=`Rs.${Math.floor((el.price)+el.price*0.1)}`
         document.querySelector('.lSize').style.backgroundColor="lightgrey"
         document.querySelector('.lSize').style.border="solid 1px red"
         document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
- 
+        document.querySelector("#sizes>.xlSize").style.border="solid lightgrey 0.5px"
+        document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
+        document.querySelector('.xlSize').style.backgroundColor="white"
+        document.querySelector('.mediumSize').style.backgroundColor="white"
       })
+
+//for xl size
+
+
+document.querySelector('.xlSize').addEventListener('click',function(){
+  let price= document.querySelector('#priceTag')
+  price.innerHTML=`Rs.${Math.floor((el.price)+el.price*0.2)}`
+  document.querySelector('.xlSize').style.backgroundColor="lightgrey"
+  document.querySelector('.xlSize').style.border="solid 1px red"
+  document.querySelector("#sizes>.lSize").style.border="solid lightgrey 0.5px"
+  document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
+  document.querySelector('.lSize').style.backgroundColor="white"
+  document.querySelector("#sizes>.xxlSize").style.border="solid lightgrey 0.5px"
+  document.querySelector("#sizes>.xxlSize").style.border="solid lightgrey 0.5px"
+  document.querySelector('.xxlSize').style.backgroundColor="white"
+  document.querySelector('.mediumSize').style.backgroundColor="white"
+})
+
+//for xxl size
+document.querySelector('.xxlSize').addEventListener('click',function(){
+  let price= document.querySelector('#priceTag')
+  price.innerHTML=`Rs.${Math.floor((el.price)+el.price*0.3)}`
+  document.querySelector('.xxlSize').style.backgroundColor="lightgrey"
+  document.querySelector('.xxlSize').style.border="solid 1px red"
+  document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
+  document.querySelector("#sizes>.lSize").style.border="solid lightgrey 0.5px"
+  document.querySelector("#sizes>.mediumSize").style.border="solid lightgrey 0.5px"
+  document.querySelector('.lSize').style.backgroundColor="white"
+  document.querySelector('.xlSize').style.backgroundColor="white"
+  document.querySelector("#sizes>.xlSize").style.border="solid lightgrey 0.5px"
+  document.querySelector('.mediumSize').style.backgroundColor="white"  
+})
 
       div.append(img)
       container.append(div)
@@ -71,6 +121,7 @@ let objCart={
       let addToLS=document.querySelector('#toBag')
       addToLS.addEventListener('click',function(el){
         localStorage.setItem('cartItem',JSON.stringify(objCart))
+        // window.location.href="./cart.html"
       })
     }
   })

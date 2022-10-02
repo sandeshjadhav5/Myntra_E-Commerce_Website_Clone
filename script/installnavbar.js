@@ -1,6 +1,6 @@
 let installnav = document.querySelector(".container");
 
-import navbar from "./components/NAVBAR.js";
+import navbar from "./NAVBAR.js";
 
 installnav.innerHTML = navbar();
 
