@@ -2,8 +2,8 @@ import { footer } from "./footer_product_page.js";
 document.getElementById("footerDiv").innerHTML=footer();
 
 
-// let key=JSON.parse(localStorage.getItem('id'))
-
+ let key=JSON.parse(localStorage.getItem('products'))
+console.log(key)
 const getDataDynamic = async () => {
    
    
@@ -22,7 +22,7 @@ appendDataDynamic(actual_dataDynamic)
 getDataDynamic()
 const appendDataDynamic= (actual_dataDynamic) => {
   
-  let key=3077134
+  // let key=3077134
 let container=document.getElementById('ProductImages')
 let imgDiv= document.querySelector('#dynamic')
 
