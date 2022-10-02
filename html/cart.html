@@ -6,7 +6,7 @@
     rel="icon"
     href="https://constant.myntassets.com/www/icons/favicon.ico"
   />
-    <link rel="stylesheet" href="../CSS/cart.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
   </head>
   <body>
     <nav>
@@ -157,7 +157,7 @@
 
         <div class="cart_left_item_selected">
           <div class="cart_left_item_selected_child">
-            <h4>ITEMS IN CART</h4>
+            <h4> <span id="cart_count" >0</span> ITEMS IN CART</h4>
           </div>
           <div
             class="cart_left_item_selected_child"
@@ -178,8 +178,8 @@
         </div>
 
         <div class="cart_items" id="cart_items">
-          <div id="cart_items_child" class="cart_items_child"></div>
-          <div id="cart_items_child" class="cart_items_child"></div>
+          <!-- <div id="cart_items_child" class="cart_items_child"></div> -->
+          <!-- <div id="cart_items_child" class="cart_items_child"></div> -->
         </div>
 
         <div class="cart_wishlist">
@@ -257,17 +257,17 @@
           <hr />
           <div class="cart_right_price_child">
             <div>Total MRP</div>
-            <div>4198</div>
+            <div id="total_mrp" ></div>
           </div>
 
           <div class="cart_right_price_child">
             <div>Discount on MRP</div>
-            <div>4198</div>
+            <div id="discount_on_mrp" ></div>
           </div>
 
           <div class="cart_right_price_child">
             <div>Coupon Discount</div>
-            <div>4198</div>
+            <div style="color:pink ;" >Apply Cupon</div>
           </div>
 
           <div class="cart_right_price_child">
@@ -279,7 +279,7 @@
 
           <div class="cart_tatal_box">
             <div class="cart_tatal">Total Amount</div>
-            <div class="cart_tatal_amount">2697</div>
+            <div class="cart_tatal_amount" id="cart_tatal_amount" > </div>
           </div>
 
           <div class="cart_place_order">
@@ -361,4 +361,4 @@
   </body>
 </html>
 
-<script src="../SCRIPT/cart.js"></script>
+<script src="../script/cart.js"></script>
