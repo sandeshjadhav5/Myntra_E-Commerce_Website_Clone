@@ -1,3 +1,14 @@
+import {sidebar} from "./sidebar.js"
+let sidebar_div = document.getElementById("sidebar");
+sidebar_div.innerHTML = sidebar();
+
+import {top_bar} from ".top_bar.js"
+let top_barDiv=document.getElementById("dpdown")
+top_barDiv.innerHTML=top_bar()
+
+import { footer } from "./footer.js";
+document.getElementById("footer").innerHTML=footer();
+
 let container=document.getElementById("box")
 const mens_Shirtsdata= async()=>{
     try{
@@ -30,10 +41,9 @@ const appendData=(data)=>{
          title.innerHTML=el.name
 
          let cost=document.createElement("p")
-         cost.innerHTML=el.price
+         cost.innerHTML="Rs. "+el.price
 
          div.append(img,title1,title,cost)
          container.append(div)
     })
 }
-

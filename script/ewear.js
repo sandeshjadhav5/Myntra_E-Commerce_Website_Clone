@@ -1,3 +1,14 @@
+import {sidebar} from "./sidebar.js"
+let sidebar_div = document.getElementById("sidebar");
+sidebar_div.innerHTML = sidebar();
+
+import {top_bar} from ".top_bar.js"
+let top_barDiv=document.getElementById("dpdown")
+top_barDiv.innerHTML=top_bar()
+
+import { footer } from "./footer.js";
+document.getElementById("footer").innerHTML=footer();
+
 let container=document.getElementById("box")
 const mens_data= async()=>{
     try{
@@ -6,7 +17,7 @@ const mens_data= async()=>{
      let actual_data= data.data
         console.log(data.data)
         let actual_data1=[]
-    for(let i=0;i<100;i++){
+    for(let i=10;i<60;i++){
       actual_data1.push(actual_data[i])
     }
     console.log(actual_data1)
@@ -27,20 +38,26 @@ const appendData=(data)=>{
         let div=document.createElement("div")
 // let id=document.createElement("p")
 // id.innerHTML=el.id
+let result=document.getElementById("result_base")
         let img=document.createElement("img")
         img.src=el.image
+         console.log(img)
         img.addEventListener("click",()=>{details(el.id)})
-        console.log(img)
-        let title1=document.createElement("h3")
+       
+        let title1=document.createElement("p")
         title1.innerHTML=el.brand
+        title1.style.fontSize="14px"
+        title1.style.fontWeight="800px"
          let title=document.createElement("p")
-         title.innerHTML=el.name
-
+         title.setAttribute("class","brand_name")
+         title.innerHTML=el.name+"..."
          let cost=document.createElement("p")
-         cost.innerHTML=el.price
+         cost.innerHTML='Rs. '+el.price
+         cost.style.fontWeight="bold"
 
          div.append(img,title1,title,cost)
-         container.append(div)
+         result.append(div)
+         container.append(result)
     })
 
 }
