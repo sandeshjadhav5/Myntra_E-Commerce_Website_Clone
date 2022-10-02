@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* div {
+      } */
+      button {
+        border: 0px;
+        background-color: white;
+      }
+      a {
+        color: #ff3f6c;
+        text-decoration: none;
+      }
+      .flexThis {
+        display: flex;
+      }
+      .pamentMode {
+        width: 100%;
+        height: 7%;
+        /* border-bottom: 1px solid grey; */
+        /* margin-top: -20px; */
+        /* padding-top: 10px; */
+      }
+      .pamentMode > h6 {
+        font-size: small;
+        margin-left: 30px;
+      }
+      .pamentMode > h6:nth-child(1) {
+        margin-top: 25px;
+        line-height: 0px;
+      }
+      .greyBorder {
+        border: 1px solid #c9c9c9;
+      }
+      .spaceBetween {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bottomBagNavbar {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 65%;
+        margin-top: 70px;
+      }
+      .bottomBagNavbar > div > img {
+        height: 30px;
+      }
+      #payLeft {
+        width: 70%;
+        padding: 5px;
+      }
+      #payRight {
+        width: 25%;
+        margin-left: 30px;
+      }
+      #payRight > div > p {
+        font-size: small;
+      }
+      #discount {
+        color: #22aca5;
+      }
+      #paymentContainerDiv {
+        width: 70%;
+        margin: auto;
+        display: flex;
+      }
+      #paymentImageCode {
+        width: 90%;
+        height: 40px;
+        padding-left: 10px;
+      }
+      #placeOrder {
+        width: 350px;
+        margin-left: 0%;
+        height: 50px;
+        color: white;
+        background-color: #ff3f6c;
+        border: 0px;
+        border-radius: 5px;
+      }
+      #topBagNavbar {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding: 10px;
+        vertical-align: middle;
+      }
+      #topBagNavbar > img {
+        height: 80%;
+      }
+
+      #pqr {
+        height: 40px;
+        width: 30px;
+        margin-left: 20px;
+      }
+
+      #img101 {
+        height: 40px;
+        width: 50px;
+      }
+
+      #cd {
+        border: 0;
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: 17px;
+      }
+
+      #month {
+        width: 35px;
+      }
+      #year {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topBagNavbar" style="overflow: hidden">
+      <a id="pqr" href="/index.html"
+        ><img
+          id="img101"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
+          alt=""
+      /></a>
+      <img src="../scripts/toppayment.PNG" alt="" />
+    </div>
+    
+    <div id="paymentContainerDiv">
+      <div id="payLeft">
+        <div style="padding: 10px" class="greyBorder">
+          <h6 style="margin-left: 30px">Bank Offers</h6>
+          <ul>
+            <li>
+              10% Instant Discount on IDFC FIRST Bank Cards on a min spend of Rs
+              2,500. TCA
+            </li>
+
+            <li>
+              5% Unlimited Cashback on Flipkart Axis Bank Credit Card. TCA
+            </li>
+            <li>
+              10% Cashback upto Rs 100 on Paytem Postpaid transaction on a min
+              spend of Rs 1000. TCA
+            </li>
+            <li>
+              15% Cashback upto Rs 150 on Freecharge Paylater transaction. TCA
+            </li>
+            <li>
+              10% Cashback upto Rs 200 on Ola Money Postpaid or wallet
+              transation on a min spend of Rs 1000. TCA
+            </li>
+            <li>
+              Upto Rs 500 Cashback on Mobikwik Wallet transactions on a min
+              spend of Rs 999. Use code MBK500 on Mobikwik. TCA
+            </li>
+            <li>
+              5% Cashback upto Rs 150 on a minimum spend of Rs 1,5500 with
+              PayZapp. TCA
+            </li>
+          </ul>
+        </div>
+        <h6 style="margin-top: 30px; margin-bottom: 20px">
+          Choose Payment Mode
+        </h6>
+        <div
+          style="
+            border: 1px solid #c9c9c9;
+            border-radius: 5px;
+
+            padding-bottom: 0px;
+            height: 300px;
+          "
+          class="flexThis"
+        >
+          <div style="width: 45%; background-color: #f4f4f5; height: 100%">
+            <div class="pamentMode">
+              <h6>Cash On Delivery</h6>
+              <h6>(Cash/Card/UPI)</h6>
+            </div>
+            <hr />
+            <div class="pamentMode">
+              <div
+                class="modal fade"
+                id="exampleModalToggle"
+                aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">
+                        Payment by Credit / Debit card
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <span
+                        >Name:
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                      >
+                      <input type="text" /><br /><br />
+                      <span>
+                        Card no: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                      >
+                      <input
+                        type="text"
+                        maxlength="16"
+                        placeholder="0000 0000 0000 0000"
+                      />
+                      <br /><br />
+                      <span>Expiry date:&nbsp;&nbsp;</span>
+                      <input
+                        id="month"
+                        type="text"
+                        maxlength="2"
+                        placeholder="mm"
+                      />
+                      &nbsp;&nbsp;<input
+                        id="year"
+                        type="text"
+                        maxlength="4"
+                        placeholder=" yyyy"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn"
+                        data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal"
+                      >
+                        Confirm
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                class="btn"
+                id="cd"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+                >Credit card / Debit Card</a
+              >
+            </div>
+
+            <hr />
+            <div class="pamentMode">
+              <h6>PhonePe/Google Pay/BHIM</h6>
+              <h6>UPI</h6>
+            </div>
+            <hr />
+            <div class="pamentMode">
+              <h6>paytm/Payzapp/Wallets</h6>
+            </div>
+            <hr />
+            <div class="pamentMode">
+              <h6>Net Banking</h6>
+            </div>
+          </div>
+          <div
+            style="
+              padding-left: 25px;
+              padding-top: 25px;
+              margin-left: 10px;
+              width: 90%;
+              height: 100%;
+            "
+          >
+            <h5 style="line-height: 0px; margin-bottom: 20px">
+              Pay on delivery(Cash/Card/UPI)
+            </h5>
+            <p style="line-height: 20px; font-size: x-small">
+              You can also pay via Cash/Card or UPI enables app at the time of
+              delivery
+            </p>
+            <p
+              style="font-size: x-small; margin-top: -20px; margin-bottom: 30px"
+            >
+              Ask your delivery executive for these options.
+            </p>
+            <button id="placeOrder">PLACE ORDER</button>
+          </div>
+        </div>
+        <div
+          class="greyBorder"
+          style="
+            padding: 15px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+          "
+        >
+          <h6>Have a Gift Card?</h6>
+          <h6 style="color: #ff3f6c">APPLY GIFT CARD</h6>
+        </div>
+      </div>
+      <div id="payRight">
+        <h6>PRICE DETAILS</h6>
+        <br />
+        <div class="spaceBetween">
+          <p>Total MRP</p>
+          <p id="totalActual"></p>
+        </div>
+        <div class="spaceBetween">
+          <p>Discount on MRP</p>
+          <p id="discount"></p>
+        </div>
+        <div class="spaceBetween">
+          <p>Convenience Fee <a href="">know more</a></p>
+          <div class="flexThis">
+            <p style="text-decoration: line-through">₹99</p>
+            <p style="color: #22aca5">FREE!</p>
+          </div>
+        </div>
+        <hr />
+        <div class="spaceBetween">
+          <h6>Total amount</h6>
+          <h6 id="total"></h6>
+        </div>
+      </div>
+    </div>
+    <div class="bottomBagNavbar">
+      <div>
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+          alt=""
+        />
+      </div>
+      <div><h6>Need Help? Contact Us</h6></div>
+    </div>
+  </body>
+</html>
+
+<script src="../script/payment.js" type="module"></script>
