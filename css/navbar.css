@@ -152,7 +152,6 @@ h4 {
   color: rgb(255, 0, 162);
   font-weight: bold;
   margin-left: 18px;
-  padding-top: 10px;
 }
 @media (max-width: 1024px) {
   nav ul li {

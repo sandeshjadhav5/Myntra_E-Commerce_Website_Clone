@@ -1,4 +1,4 @@
-// import { navbar} from "./navbar.js";
+// import { navbar} from "./installnavbar.js";
 // document.getElementById("navbar").innerHTML=navbar();
 
 
