@@ -2,7 +2,7 @@ import {sidebar} from "./sidebar.js"
 let sidebar_div = document.getElementById("sidebar");
 sidebar_div.innerHTML = sidebar();
 
-import {top_bar} from ".top_bar.js"
+import {top_bar} from "./top_bar.js"
 let top_barDiv=document.getElementById("dpdown")
 top_barDiv.innerHTML=top_bar()
 
