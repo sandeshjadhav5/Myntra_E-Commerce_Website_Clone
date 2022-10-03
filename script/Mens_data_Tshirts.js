@@ -34,7 +34,7 @@ const appendData=(data)=>{
     data.forEach(function(el){
     //  console.log(el)
         let div=document.createElement("div")
-
+        let result=document.getElementById("result_base")
         let img=document.createElement("img")
         img.src=el.image
         console.log(img)
@@ -47,7 +47,8 @@ const appendData=(data)=>{
          cost.innerHTML="Rs. "+el.price
 
          div.append(img,title1,title,cost)
-         container.append(div)
+         result.append(div)
+         container.append(result)
     })
 }
 
