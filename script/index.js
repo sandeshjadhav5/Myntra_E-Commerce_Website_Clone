@@ -1,5 +1,5 @@
-// import { navbar} from "./installnavbar.js";
-// document.getElementById("navbar").innerHTML=navbar();
+import {navbar} from "./NAVBAR.js";
+document.querySelector(".container").innerHTML=navbar();
 
 
 import { footer } from "./footer.js";
@@ -10,10 +10,17 @@ document.getElementById("footer").innerHTML=footer();
 
 
 
-// document.getElementById("top-offer-img").addEventListener("click", placeOrder);
+ document.querySelector("#goToBag").addEventListener("click", goToBag);
 
 
-// function placeOrder() {
-//     window.location.href = "../html/ewear.html";
-//   }
+function goToBag() {
+    console.log("hello")
+    window.location.href ="./html/cart.html";
+  }
+
+  document.querySelector(".profile").addEventListener('click',goToSignup)
+
+  function goToSignup(){
+    window.location.href="./html/signup.html"
+  }
   

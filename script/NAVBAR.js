@@ -417,7 +417,7 @@ let navbar = () => {
     />
     <div class="rightbox">
     
-      <a href="../html/signup.html">
+      
 
       <div class="profile mx-2">
       
@@ -429,14 +429,14 @@ let navbar = () => {
       </div>
        </a>
 
-      <div class="wishlist mx-2">
+      <div  class="wishlist mx-2">
         <img
           src="https://static.thenounproject.com/png/3386813-200.png"
           alt=""
         />Wishlist
       </div>
-      <div class="bag mx-2">
-      <a href="../html/cart.html">
+      <div id="goToBag" class="bag mx-2">
+      
         <img
           src="https://cdn-icons-png.flaticon.com/512/687/687259.png"
           alt=""
@@ -450,4 +450,4 @@ let navbar = () => {
   `;
 };
 
-export default navbar;
+export {navbar};
