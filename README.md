@@ -2,7 +2,7 @@
 
 
 <h3  align="center">Myntra E-commerce Website Clone</h3>
-
+<image src="https://i.imgur.com/6aielB6.png"/>
 <h3>Description :-</h3>
 <p>E-commerce Website Clone of 'Myntra' Built in Five Days with Four team Members </p>
 <br/>
